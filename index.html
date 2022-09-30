@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deveditor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Editor.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <section class="icon">
+            <img src="./Editor.png" alt="">
+        </section>
+        <section>
+            <button class="btn btn-save">Save</button>
+            <button class="btn btn-run" disabled>Run</button>
+            <button class="btn btn-live">Live <input type="checkbox" id="live-checkbox" checked/></button>
+        </section>
+    </header>
+    <main>
+        <section class="header">
+            <menu>
+                <button class="change active">HTML</button>
+                <button class="change ">CSS</button>
+                <button class="change ">JS</button>
+            </menu>
+            <h1>Live Preview</h1>
+        </section>
+
+        
+
+        <section id="edit">
+            <textarea class="text show" id="html" placeholder="input your html here"></textarea>
+            <textarea class="text hide" id="css" placeholder="input your css here"></textarea>
+            <textarea class="text hide" id="js" placeholder="input your JS here"></textarea>
+            <div class="bar" title="Click and Drag"></div>
+            <iframe id="frame"></iframe>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

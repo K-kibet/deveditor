@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    background-color: #555;
+    height: 100vh;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+header section{
+    display: flex;
+    height: 100%;
+    padding: 0;
+
+}
+
+header section button{
+
+    padding: 3px 5px;
+    font-size: 17px;
+    border-radius: 5px;
+    color: rgb(255, 217, 0);
+    text-transform: uppercase;
+    background-color: #384a56;
+    margin: 0px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+header section button:disabled{
+    background-color: rgb(218, 218, 218);
+}
+
+header section button input{
+    margin: 0px 10px;
+    width: 20px;
+    height: 20px;
+}
+
+header section img {
+    width: 40px;
+    object-fit: fill;
+    object-position: center;
+}
+
+main{
+    padding: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+}
+
+.header h1{
+    width: 50%;
+    background-color: rgb(104, 95, 95);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5px;
+}
+
+menu{
+    height: 55px;
+    background-color: rgb(104, 95, 95);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 50%;
+    padding: 3px;
+}
+
+menu button{
+    width: 100%;
+    height: 50px;
+    margin: 5px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+#edit {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hide {
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.bar{
+    width: 4px;
+    height: 100%;
+    background-color: #eee;
+    cursor: w-resize;
+}
+
+#frame{
+    border: none;
+    height: 90vh;
+    background: white;
+    width: 100%;
+    flex: 1;
+}
+
+.text{
+    font-size: 1.3em;
+    resize: vertical;
+    height:90vh;
+    width: 100%;
+    padding: 10px;
+    color: white;
+    border-right: 1px solid #555;
+    flex: 1;
+
+    background: inherit;
+    text-shadow: 0 0 12px rebeccapurple;
+    letter-spacing: 0.1em;
+}
+
+
+::placeholder{
+    color: white;
+    opacity: 1;
+}
+
+/*explorer*/
+:-ms-input-placeholder{
+    color: white;
+}
+
+/* microsoft edge */
+:-ms-input-placeholder{
+    color: white;
+}
+
+:focus{
+    outline: none;
+}
+
+button:hover{
+    background: rgba(87,153, 197 );
+}
+
+/*larger screens */
+@media screen and (min-width: 570px){
+    main{
+        padding: 12px;
+        height: 100%;
+    }
+    
+    #edit{
+        flex-direction: row;
+    }
+
+    #frame, .text{
+        height: 100%;
+        width:50% ;
+    }
+}
+
+.active{
+    background: rgba(87,153, 197);
+}
+
+::-webkit-scrollbar {
+    background: rgba(255, 255, 255, 0.1);
+  }
+  
+  ::-webkit-scrollbar:horizontal {
+    height: 10px;
+  }
+  
+  ::-webkit-scrollbar:vertical {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+      display: none;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #384a56;
+  }
+  
+  ::-webkit-scrollbar-corner {
+      background: rgba(255, 255, 255, 0.1);
+  }
